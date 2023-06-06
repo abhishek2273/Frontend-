@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinner</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <style>
+    .div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: 700px;
+    }
+    .spinner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid yellow;
+      border-top: 10px solid black;
+      animation: spin 2s ease-in 0s infinite normal;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <body>
+    <div class="div">
+      <div class="spinner"></div>
+    </div>
+  </body>
+</html>
